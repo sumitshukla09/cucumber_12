@@ -1,3 +1,4 @@
+cat > pom.xml <<EOF
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
@@ -9,22 +10,17 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- Cucumber Java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>7.16.0</version>
         </dependency>
-
-        <!-- Cucumber JUnit -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>7.16.0</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- JUnit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -44,3 +40,4 @@
     </build>
 
 </project>
+EOF
