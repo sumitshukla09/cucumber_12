@@ -2,19 +2,20 @@ package stepdefinitions;
 
 import io.cucumber.java.en.*;
 
-public class SampleSteps {
-    @Given("I have a working Cucumber setup")
-    public void i_have_a_working_cucumber_setup() {
-        System.out.println("Cucumber setup is working");
+public class LoginSteps {
+
+    @Given("the user is on the login page")
+    public void the_user_is_on_the_login_page() {
+        System.out.println("User navigated to login page.");
     }
 
-    @When("I run the tests")
-    public void i_run_the_tests() {
-        System.out.println("Running the tests");
+    @When("the user enters valid username and password")
+    public void the_user_enters_valid_username_and_password() {
+        System.out.println("User entered valid credentials.");
     }
 
-    @Then("I should see a success message")
-    public void i_should_see_a_success_message() {
-        System.out.println("Test ran successfully");
+    @Then("the user should be redirected to the homepage")
+    public void the_user_should_be_redirected_to_the_homepage() {
+        System.out.println("User is on the homepage.");
     }
 }
