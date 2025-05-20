@@ -1,6 +1,21 @@
-Feature: Sample feature to test cucumber setup
-
-  Scenario: Verify setup
-    Given I have a working Cucumber setup
-    When I run the tests
-    Then I should see a success message
+<dependencies>
+    <!-- Cucumber -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>7.16.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>7.16.0</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- JUnit -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.2</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
